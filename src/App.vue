@@ -1,10 +1,10 @@
 <template>
-    <n-layout >
+    <n-layout style="position: relative">
       <n-layout-header>
         <CommonHeader/>
       </n-layout-header>
       <n-layout-content
-        style="background: rgba(61,61,61,0.05);padding: 1rem 3rem"
+        class="layout-content"
       >
         <router-view/>
       </n-layout-content
@@ -42,15 +42,12 @@ import {NLayout, NLayoutFooter, NLayoutHeader, NLayoutContent} from 'naive-ui'
     text-decoration: none;
   }
   .n-layout-footer {
-    background: rgba(128, 128, 128, 0.2);
     padding: 24px;
   }
 
-  .n-layout-sider {
-    background: rgba(128, 128, 128, 0.3);
-  }
 
   .n-layout-content {
-    background: rgba(128, 128, 128, 0.4);
+    background: rgba(220, 220, 220, 0.4);
+    padding: 1rem 3rem;
   }
 </style>

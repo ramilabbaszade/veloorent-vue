@@ -1,8 +1,9 @@
 <template>
   <nav>
-    <img src="../../../static/img/logo.png" alt="logo">
+    <router-link to="/"><img src="../../../static/img/logo.png" alt="logo"></router-link>
     <div class="nav-links">
       <router-link to="/">Elan paylaş</router-link>|
+      <router-link to="/me">Me</router-link>
       <router-link to="/">Haqqımızda</router-link>
       <router-link to="/">Çıxış</router-link>
     </div>

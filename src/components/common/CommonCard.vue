@@ -56,11 +56,15 @@ export default {
 .card-item {
   height: 15rem;
   border: 1px solid rgba(220, 220, 220, 0.6);
-  border-radius: 6px;
+  border-radius: 8px;
+  background: white;
 
   &__image {
     width: 100%;
     height: 10rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
   }
 
   &__info {
