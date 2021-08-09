@@ -37,17 +37,22 @@ import {NLayout, NLayoutFooter, NLayoutHeader, NLayoutContent} from 'naive-ui'
   h1,h2,h3,h4,h5,h6{
     padding: 0;
   }
+  hr{
+    width: 100%;
+    border: 1px solid rgba(199, 199, 199, 0.47);
+  }
   a{
     color:black;
     text-decoration: none;
   }
   .n-layout-footer {
     padding: 24px;
+    background: wheat;
+    color: black;
   }
 
-
   .n-layout-content {
-    background: rgba(220, 220, 220, 0.4);
+    background: rgba(250, 250, 251, 1);
     padding: 1rem 3rem;
   }
 </style>

@@ -64,15 +64,18 @@ export default {
     height: 10rem;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
   }
 
   &__info {
     padding: 0rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     &__second {
       display: flex;
       justify-content: space-between;
+      width: 100%;
     }
   }
 }
