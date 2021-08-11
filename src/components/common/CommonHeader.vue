@@ -2,20 +2,42 @@
   <nav>
     <router-link to="/"><img src="../../../static/img/logo.png" alt="logo"></router-link>
     <div class="nav-links">
-      <router-link to="/">Elan paylaş</router-link>|
+      <router-link to="/" @click="activate">Elan paylaş</router-link>|
       <router-link to="/me">Me</router-link>
       <router-link to="/">Haqqımızda</router-link>
       <router-link to="/">Çıxış</router-link>
     </div>
   </nav>
+  <n-drawer v-model:show="active" :width="502" :placement="'right'">
+    <n-drawer-content title="Giriş" closable>
+      Stoner is a 1965 novel by the American writer John Williams.
+    </n-drawer-content>
+  </n-drawer>
 </template>
 
 <script>
+import { ref } from 'vue'
+import {NDrawer, NDrawerContent} from 'naive-ui'
 
 export default {
   name: "CommonHeader",
+  components:{
+    NDrawer,
+    NDrawerContent
+  },
   data() {
+  },
+  setup () {
+    const active = ref(false)
+    const activate = () => {
+      active.value = true
+    }
+    return {
+      active,
+      activate
+    }
   }
+
 }
 
 </script>
