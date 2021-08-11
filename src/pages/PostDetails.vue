@@ -56,7 +56,7 @@ import {LocalPhoneOutlined} from '@vicons/material'
 import {NIcon, NButton, NCarousel, NAvatar} from 'naive-ui'
 
 export default {
-  name: "PostIndex",
+  name: "PostDetails",
   components: {
     CommonCard,
     LocalPhoneOutlined,

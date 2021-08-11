@@ -18,8 +18,8 @@ const routes = [
   },
   {
     path: '/post/:id',
-    name: 'PostIndex',
-    component: () => import('../pages/PostIndex')
+    name: 'PostDetails',
+    component: () => import('../pages/PostDetails')
   }
 ]
 
