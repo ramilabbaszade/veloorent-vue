@@ -1,8 +1,8 @@
 <template>
   <div v-for="(item,index) in bikes" :key="index" class="card-item">
-    <img src="../../assets/img/dss.jpg" class="card-item__image" alt="">
+    <router-link :to="'/post/'+item.id"><img src="../../assets/img/dss.jpg" class="card-item__image" :alt="item.title"></router-link>
     <div class="card-item__info">
-      <h4>{{ item.title }}</h4>
+      <router-link :to="'/post/'+item.id"><h4>{{ item.title }}</h4></router-link>
       <div class="card-item__info__second">
         <div>{{ item.city }} | {{ item.type }} | {{ item.size }}</div>
       </div>
