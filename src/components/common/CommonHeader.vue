@@ -43,6 +43,8 @@
                 </template>Qeydiyyat
               </n-button>
             </n-space>
+            <router-link to="#">Şifrəmi unutdum</router-link>
+
           </n-space>
         </form>
       </div>
