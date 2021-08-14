@@ -4,7 +4,7 @@
       <div class="me__user--left">
         <div class="me__user--left__card profile-card">
           <img class="me__user--left__card__picture" src="../assets/img/dss.jpg" alt="profile">
-          <h1>Ramil Abbas</h1>
+          <h1>Ramil Abbas {{$route.params.id}}</h1>
           <div>
             <n-icon>
               <LocationOnOutlined/>
@@ -48,7 +48,7 @@ import {LocationOnOutlined, FacebookFilled, LocalPhoneTwotone} from '@vicons/mat
 import {NIcon} from 'naive-ui'
 
 export default {
-  name: "me",
+  name: "UserDetails",
   components: {
     CommonCard,
     LocationOnOutlined,
