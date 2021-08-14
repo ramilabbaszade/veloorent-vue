@@ -1,0 +1,5 @@
+$colors: (
+  "black": #000
+) !default;
+
+$color-black: map-get($colors, 'black');
