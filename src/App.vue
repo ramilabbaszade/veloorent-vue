@@ -52,7 +52,7 @@ import {NLayout, NLayoutFooter, NLayoutHeader, NLayoutContent} from 'naive-ui'
   }
 
   .n-layout-content {
-    background: rgba(250, 250, 251, 1);
+    background: #f7f7f7;
     padding: 1rem 3rem;
   }
 </style>

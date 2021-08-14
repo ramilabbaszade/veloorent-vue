@@ -1,92 +1,60 @@
 <template>
   <div class="me">
     <div class="me__user">
-      <img class="me__picture" src="../assets/img/dss.jpg" alt="profile">
-      <div class="me__info">
-        <h1>Ramil Abbas</h1>
-        <div class="me__info__location">
-          <n-icon>
-            <LocationOnOutlined/>
-          </n-icon>
-          Sumgayit
+      <div class="me__user--left">
+        <div class="me__user--left__card profile-card">
+          <img class="me__user--left__card__picture" src="../assets/img/dss.jpg" alt="profile">
+          <h1>Ramil Abbas</h1>
+          <div>
+            <n-icon>
+              <LocationOnOutlined/>
+            </n-icon>
+            Sumgayit
+          </div>
+          <div>
+          </div>
         </div>
-        <p>Description is lorem ipsum dolor</p>
-        <div>
-          <n-button type="warning">
-            <template #icon>
-              <n-icon>
-                <EditRound/>
-              </n-icon>
-            </template>
-            Düzəliş et
-          </n-button>
+        <div class="me__user--left__card">
+          <p>Description is lorem ipsum dolor, is lorem ipsum dolor</p>
+          <hr>
+          <div class="card-socials">
+            <router-link to="/">
+              <n-icon size="22px">
+                <FacebookFilled/>
+              </n-icon>Facebook
+            </router-link>
+            <router-link to="/">
+              <n-icon size="22px">
+                <LocalPhoneTwotone/>
+              </n-icon>Phone
+            </router-link>
+          </div>
         </div>
       </div>
+      <div class="me__user--main">
+        <div class="head-title">Aktiv elanlar</div>
 
-    </div>
-
-    <hr/>
-    <div class="me_user_posts">
-      <CommonCard/>
+        <div class="me__user--main__posts">
+          <CommonCard/>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import CommonCard from "../components/common/CommonCard";
-import {LocationOnOutlined, EditRound} from '@vicons/material'
-import {NIcon, NButton} from 'naive-ui'
+import { LocationOnOutlined, FacebookFilled, LocalPhoneTwotone } from '@vicons/material'
+import { NIcon} from 'naive-ui'
 
 export default {
   name: "me",
   components: {
     CommonCard,
     LocationOnOutlined,
+    FacebookFilled,
+    LocalPhoneTwotone,
     NIcon,
-    EditRound,
-    NButton
   }
 }
 </script>
-
-<style lang="scss">
-.me {
-  padding: 0 15rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.me__picture {
-  width: 18rem;
-  height: 18rem;
-  border-radius: 10px;
-}
-
-.me__user {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.me__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  &__location {
-
-  }
-}
-
-.me_user_posts {
-  display: flex;
-  gap: 1rem;
-  width: 100%;
-  margin-top: 1rem;
-}
-</style>
