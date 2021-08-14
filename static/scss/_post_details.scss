@@ -1,0 +1,51 @@
+.post_details {
+  padding: 0 8rem;
+
+  &__prices{
+    display: flex;
+    justify-content: flex-end;
+
+    &__item{
+      background: white;
+      padding: .5rem 1rem;
+      border: 1px solid #ddd;
+    }
+  }
+
+  &__author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .author-pic{
+      width: 5rem;
+      height: 5rem;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .author-info{
+      &__name{
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+      &__city{
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &--posts{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
