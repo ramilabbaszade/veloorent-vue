@@ -2,10 +2,10 @@
   <nav>
     <router-link to="/"><img src="../../../static/img/logo.png" alt="logo"></router-link>
     <div class="nav-links">
-      <router-link to="/" @click="activate">Elan paylaş</router-link>
+      <router-link to="/post/new">Elan paylaş</router-link>
       |
       <router-link to="/me">Me</router-link>
-      <router-link to="/">Haqqımızda</router-link>
+      <router-link to="#" @click="activate">Giriş</router-link>
       <router-link to="/">Çıxış</router-link>
     </div>
   </nav>

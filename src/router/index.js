@@ -20,6 +20,11 @@ const routes = [
     path: '/post/:id',
     name: 'PostDetails',
     component: () => import('../pages/PostDetails')
+  },
+  {
+    path: '/post/new',
+    name: 'PostCreateOrUpdate',
+    component: () => import('../pages/PostCreateOrUpdate')
   }
 ]
 
