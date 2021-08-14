@@ -6,8 +6,8 @@
       <div class="card-item__info__second">
         <div>{{ item.city }} | {{ item.type }} | {{ item.size }}</div>
       </div>
-      <div class="card-item__info__second" style="color:green">
-        <div><b>{{ item.price }}</b>azn</div>
+      <div class="card-item__info__second">
+        <div><b>{{ item.price }}</b><img class="card-item__manat" :src="manat" alt="manat"/></div>
         <div>...</div>
       </div>
     </div>
@@ -15,11 +15,14 @@
 </template>
 
 <script>
+import manat from '/static/img/manat.svg'
+
 export default {
   name: 'CommonCard',
   components: {},
   data() {
     return {
+      manat:manat,
       bikes: [
         {
           id: 1,
@@ -30,7 +33,7 @@ export default {
           size:"24",
         },
         {
-          id: 1,
+          id: 2,
           title: "EMpleee B1 MK",
           price: 10,
           city:"Sumgayit",
@@ -38,7 +41,31 @@ export default {
           size:"24",
         },
         {
-          id: 1,
+          id: 3,
+          title: "EMpleee B1 MK",
+          price: 10,
+          city:"Sumgayit",
+          type:"BMX",
+          size:"24",
+        },
+        {
+          id: 3,
+          title: "EMpleee B1 MK",
+          price: 10,
+          city:"Sumgayit",
+          type:"BMX",
+          size:"24",
+        },
+        {
+          id: 3,
+          title: "EMpleee B1 MK",
+          price: 10,
+          city:"Sumgayit",
+          type:"BMX",
+          size:"24",
+        },
+        {
+          id: 3,
           title: "EMpleee B1 MK",
           price: 10,
           city:"Sumgayit",
@@ -58,6 +85,11 @@ export default {
   border: 1px solid rgba(220, 220, 220, 0.6);
   border-radius: 8px;
   background: white;
+
+  &__manat{
+    width: 16px;
+    height: 12px;
+  }
 
   &__image {
     width: 100%;
