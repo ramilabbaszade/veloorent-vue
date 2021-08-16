@@ -1,4 +1,12 @@
 <template>
+  <div class="home__filter">
+    <n-select style="width: 15rem" v-model:value="value" size="large" clearable placeholder="Şəhər" :options="cityOptions"/>
+    <n-select style="width: 15rem" v-model:value="value" size="large" clearable placeholder="Tipi" :options="typeOptions"/>
+    <n-select style="width: 10rem" v-model:value="value" size="large" clearable placeholder="Ölçüsü" :options="sizeOptions"/>
+    <n-select style="width: 20rem" v-model:value="value" size="large" clearable placeholder="Aksesuarlar" multiple :options="accesuares"/>
+    <n-button size="large" color="#1d1e44">Axtar</n-button>
+
+  </div>
   <div class="grid-cards">
     <CommonCard/>
   </div>
@@ -6,12 +14,19 @@
 
 <script>
 import CommonCard from "../components/common/CommonCard";
+import {NSelect, NButton} from 'naive-ui'
 
 export default {
   name: 'Home',
-  components: {CommonCard},
+  components: {CommonCard, NSelect,NButton},
   data() {
     return {
+      options: [
+        {
+          label: "Everybody's Got Something to Hide Except Me and My Monkey",
+          value: 'song0',
+        },
+      ],
       bikes: [
         {
           id: 1,
@@ -37,40 +52,92 @@ export default {
           type: "BMX",
           size: "24",
         },
+      ],
+      cityOptions:[
+        {
+          value: "Sumgait",
+          label: "Sumgayit",
+        },
+        {
+          value: "Baku",
+          label: "Baki",
+        },
+        {
+          value: "Ganja",
+          label: "Gəncə",
+        },
+      ],
+      accesuares:[
+        {
+          value: "Lights",
+          label: "Fənər",
+        },
+        {
+          value: "Basket",
+          label: "Səbət",
+        },
+        {
+          value: "horn",
+          label: "Siqnal",
+        },
+      ],
+      sizeOptions: [
+        {
+          value: 16,
+          label: 16,
+        },
+        {
+          value: 20,
+          label: 20
+        },
+        {
+          value: 24,
+          label: 24
+        },
+        {
+          value: 26,
+          label: 26
+        },
+        {
+          value: 28,
+          label: 28
+        },
+      ],
+      typeOptions: [
+        {
+          value: "BMX",
+          label: "BMX",
+        },
+        {
+          value: "City",
+          label: "Şəhər "
+        },
+        {
+          value: "Child",
+          label: "Uşaq üçün"
+        },
+        {
+          value: "Mountain",
+          label: "Dağ"
+        },
+        {
+          value: "Folding",
+          label: "Qatlana bilən"
+        },
+        {
+          value: "fixed_gear",
+          label: "Sabit ötürücü"
+        },
+        {
+          value: "hybrid",
+          label: "Hibrid"
+        },
+        {
+          value: "electric",
+          label: "ELektrik"
+        },
       ]
     }
   }
 }
 </script>
-
-<style lang="scss">
-.grid-cards {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 1rem;
-  grid-row-gap: .5rem;
-
-  @media only screen and (max-width: 1600px) {
-    & {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-  @media only screen and (max-width: 1040px) {
-    & {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  @media only screen and (max-width: 750px) {
-    & {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media only screen and (max-width: 425px) {
-    & {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-}
-
-
-</style>
