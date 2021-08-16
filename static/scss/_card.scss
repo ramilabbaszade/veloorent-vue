@@ -1,8 +1,10 @@
 .card-item {
-  height: 14rem;
+  //height: 14rem;
   border: 1px solid rgba(220, 220, 220, 0.6);
   border-radius: 8px;
   background: white;
+  display: flex;
+  flex-direction: column;
 
   &__image {
     width: 100%;
@@ -12,7 +14,7 @@
   }
 
   &__info {
-    padding: 0rem .5rem;
+    padding: .5rem .5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

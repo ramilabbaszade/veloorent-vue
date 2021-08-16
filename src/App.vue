@@ -1,5 +1,5 @@
 <template>
-    <n-layout style="position: relative">
+    <n-layout>
       <n-layout-header>
         <CommonHeader/>
       </n-layout-header>
@@ -26,33 +26,3 @@ import {NLayout, NLayoutFooter, NLayoutHeader, NLayoutContent} from 'naive-ui'
   }
 
 </script>
-
-<style lang="scss">
-  *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Quicksand";
-  }
-  h1,h2,h3,h4,h5,h6{
-    padding: 0;
-  }
-  hr{
-    width: 100%;
-    border: 1px solid rgba(199, 199, 199, 0.47);
-  }
-  a{
-    color:black;
-    text-decoration: none;
-  }
-  .n-layout-footer {
-    padding: 24px;
-    background: wheat;
-    color: black;
-  }
-
-  .n-layout-content {
-    background: #f7f7f7;
-    padding: 1rem 3rem;
-  }
-</style>

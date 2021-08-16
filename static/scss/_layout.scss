@@ -1,0 +1,21 @@
+.n-layout-content {
+  background: white;
+  padding: .5rem 8rem;
+
+  @media only screen and (min-width: 1600px) {
+    & {
+      padding: .5rem 15rem;
+    }
+  }
+  @media only screen and (max-width: 1040px) {
+    & {
+      padding: .5rem 3rem;
+    }
+  }
+}
+
+.n-layout-footer {
+  padding: 24px;
+  background: wheat;
+  color: black;
+}

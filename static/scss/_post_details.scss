@@ -1,5 +1,4 @@
 .post_details {
-  padding: 0 8rem;
   background: white;
 
   &__main {
@@ -20,7 +19,7 @@
     }
 
     &--right {
-      margin-left: 8rem;
+      margin-left: 3rem;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -54,7 +53,7 @@
       background: white;
       height: 7rem;
       width: 7rem;
-      border: 1px solid green;
+      border-bottom: 1px solid green;
       display: flex;
       flex-direction: column;
       align-items: center;

@@ -46,7 +46,7 @@ export default {
 <style lang="scss">
 .grid-cards {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 1rem;
   grid-row-gap: .5rem;
 
