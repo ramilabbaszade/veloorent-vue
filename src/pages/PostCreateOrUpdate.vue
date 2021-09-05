@@ -22,6 +22,10 @@
           <div>Şəhər:</div>
           <n-auto-complete :options="cityOptions" v-model:value="value" placeholder="Daxil edin"/>
         </div>
+        <div>
+          <div>Aksesuarlar:</div>
+          <n-auto-complete :options="cityOptions" v-model:value="value" placeholder="Daxil edin"/>
+        </div>
       </n-space>
     </n-space>
     <n-button type="primary">Primary</n-button>
